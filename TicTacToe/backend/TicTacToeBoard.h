@@ -37,16 +37,18 @@ public:
     TicTacToeBoard(const TicTacToeBoardDescriptor& desc) : d(desc) {}
     TicTacToeBoard(const TicTacToeBoard& oldBoard) :d(oldBoard.d) {}
     TicTacToeBoard(TicTacToeBoard&& oldBoard) :d(oldBoard.d) {}
+
+    int numOccupied() const;
+    GameState getGameState() const;
+
     const TicTacToeBoard makeMove(const TicTacToeMove& m) const;
     const TicTacToeBoardDescriptor& getDescriptor() const { return d;}
     bool isLegal(const TicTacToeMove& m) const;
     const char& operator[] (int i) const { return d[i];}
     const char& operator[] (int i) { return d[i];}
-    GameState getGameState();
 
 private:
     TicTacToeBoardDescriptor d;
-    int checkLine(char, char, char);
-    int numOccupied();
+    int checkLine(char, char, char) const;
 };
 #endif //GAMES_TICTACTOEBOARD_H

@@ -16,7 +16,7 @@ bool TicTacToeBoard::isLegal(const TicTacToeMove &m) const {
     return true;
 }
 
-GameState TicTacToeBoard::getGameState() {
+GameState TicTacToeBoard::getGameState() const {
     auto str = d.getDescription();
     for (auto i = 0; i < BOARD_SIZE / 3; ++i) {
         auto state = checkLine(str[3 * i], str[3 * i + 1], str[3 * i + 2]);
@@ -46,16 +46,14 @@ GameState TicTacToeBoard::getGameState() {
     return Draw;
 }
 
-inline
-int TicTacToeBoard::numOccupied() {
+int TicTacToeBoard::numOccupied() const  {
     auto occ = 0;
     for (auto c: d.getDescription())
         occ += (c != '.') ? 1 : 0;
     return occ;
 }
 
-inline
-int TicTacToeBoard::checkLine(char x, char y, char z){
+int TicTacToeBoard::checkLine(char x, char y, char z) const {
     if (x == y && y == z && x == 'x')
         return 1;
     else{
