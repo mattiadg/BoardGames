@@ -1,10 +1,10 @@
 # C++ Board Games
 This repository is a container of two players board games with AI engine. The engines are not supposed to be state of 
-the art, but they should work reasonably well. In fact the goal of this project is two-folds:  
+the art, but they should work reasonably well. In fact the goal of this project is twofold:  
 - Learn software development in C++ 
 - Learn AI for games
 
-The first game to be implemented will be TicTacToe, which is the easiest game around, especially to build an AI. 
+The first game to be implemented will be TicTacToe, which is the easiest game around, especially to build an AI for. 
 While gaining more experience with this project, new games will be added to explore more features of C++ for engineering 
 and new game algorithms. 
 At the moment, the most complex game to add is chess. We are not interested in games that can be solved only through 
@@ -14,7 +14,7 @@ This code is meant for educational purpose, and thus anybody that shares the sam
 feel free to contribute or to use it under the license agreements.
 
 ## Hacktoberfest 2018
-Hacktoberfest is the event running from October, 1st to 31st. Everyone is encouraged to contribute to github 
+Hacktoberfest is the event running from October 1st to 31st. Everyone is encouraged to contribute to github 
 repositories to win a T-shirt of the event.  
 This repository wants to welcome developers that share the learning goals of the project with tasks that are easy to 
 implement for people that read the code for the first time. There are [issues](https://github.com/mattiadg/BoardGames/issues)
@@ -26,6 +26,7 @@ check your stats!
 ## Provisional list of games to support
 - TicTacToe
 - Backgammon
+- Connect Four
 - Reversi (multiple sizes)
 - Bridge
 - Poker (multiple formats)
@@ -38,12 +39,12 @@ Clone the repository with
 git clone https://github.com/mattiadg/BoardGames.git
 ```
 
-then enter into the directory of TicTacToe
+Then enter into the directory of TicTacToe
 ```
 cd BoardGames/TicTacToe
 ```
 
-ans simply use the Makefile to install
+And simply use the Makefile to install
 ```
 make tictactoe
 ```
