@@ -7,13 +7,17 @@
 int main() {
     TicTacToe game;
     TicTacToeDisplay d(game);
-    TicTacToePlayer engine('o');
+    bool player_go_first;
+    std::cout << "Do you want to play first? [1:yes / 0:no]" << std::endl;
+    std::cin >> player_go_first;
+    char sym = player_go_first ? 'o' : 'x';
+    TicTacToePlayer engine(sym);
     while(game.getBoard().getGameState() == Continue) {
         auto turn = game.getTurn();
         std::cout << "Turn: " << turn << std::endl;
         display(std::cout, d);
         char curr_sym = turn % 2 == 0 ? 'x' : 'o';
-        if (turn % 2 == 0) {
+        if (turn % 2 == !player_go_first) {
             try {
                 d.makeMove(std::cin, curr_sym);
             }
