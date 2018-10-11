@@ -4,6 +4,7 @@
 #include <stdexcept>
 #include <vector>
 #include <memory>
+#include <climits>
 #include "../backend/TicTacToeBoardDescriptor.h"
 #include "../backend/TicTacToeBoard.h"
 
