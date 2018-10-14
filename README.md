@@ -33,18 +33,41 @@ check your stats!
 - Chess
 
 ## Getting started
-To install this software you only need g++ with support for C++11 and make.
+To install this software you only need a C++ compiler that supports C++11 and either g++ or cmake (or both). 
+
 Clone the repository with 
 ```
 git clone https://github.com/mattiadg/BoardGames.git
 ```
+### Option 1: Use CMake
+Create a build directory (preferably outside the source tree), and enter it.
+````
+mkdir build
+cd build
+````
 
-Then enter into the directory of TicTacToe
+Configure with cmake
+
+#### Windows
+````
+cmake -G "Visual Studo 15 2017 Win64" ..
+````
+Open the generated `BoardGames.sln` file in the `build` directory and build in Visual Studio
+
+#### Linux
+````
+cmake -DCMAKE_BUILD_TYPE=Debug <source location>
+````
+
+Build using `make`
+
+### Option 2: Use Make
+Enter into the directory of TicTacToe
 ```
 cd BoardGames/TicTacToe
 ```
 
-And simply use the Makefile to install
+Use the Makefile to install
 ```
 make tictactoe
 ```
