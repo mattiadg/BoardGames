@@ -12,6 +12,7 @@ std::ostream & display(std::ostream &os, TicTacToeDisplay& d) {
         if (i < 2)
             os << "-|-|-" << std::endl;
     }
+    return os;
 }
 
 const TicTacToeDisplay& TicTacToeDisplay::makeMove(std::istream &is, char symbol) {
