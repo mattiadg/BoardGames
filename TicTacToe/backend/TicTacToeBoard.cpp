@@ -9,7 +9,6 @@ const TicTacToeBoard TicTacToeBoard::makeMove(const TicTacToeMove& m) const {
     return b;
 }
 
-inline
 bool TicTacToeBoard::isLegal(const TicTacToeMove &m) const {
     if (d[m.i] != '.')
         return false;
