@@ -8,20 +8,20 @@ int main() {
     TicTacToe game;
     TicTacToeDisplay d(game);
 
-	// Goal of the game
-	std::cout << "GOAL OF THE GAME:" << std::endl;
-	std::cout << std::endl;
-	std::cout << "The goal of the game is to get 3 of your symbols in a row. Be it horizontally, vertically or diagonally." 
+	  // Goal of the game
+	  std::cout << "GOAL OF THE GAME:" << std::endl;
+	  std::cout << std::endl;
+	  std::cout << "The goal of the game is to get 3 of your symbols in a row. Be it horizontally, vertically or diagonally." 
               << std::endl;
-	std::cout << std::endl;
+	  std::cout << std::endl;
 
-	// Instructions
-	std::cout << "INSTRUCTIONS:" << std::endl;
-	std::cout << std::endl;
-	std::cout << "When prompted give 2 numbers between 0 and 2, which represent the row and column." 
+	  // Instructions
+	  std::cout << "INSTRUCTIONS:" << std::endl;
+	  std::cout << std::endl;
+	  std::cout << "When prompted give 2 numbers between 0 and 2, which represent the row and column." 
               << std::endl;
-	std::cout << std::endl;
-	std::cout << "USAGE\tGive your next move (row, col): [row] [col]" << std::endl;
+	  std::cout << std::endl;
+	  std::cout << "USAGE\tGive your next move (row, col): [row] [col]" << std::endl;
 
     bool player_go_first;
     std::cout << "Do you want to play first? [1:yes / 0:no]" << std::endl;
