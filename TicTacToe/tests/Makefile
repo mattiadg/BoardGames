@@ -1,7 +1,7 @@
 CC=g++ --std=c++11
 TARGET=tests.exe
-OBJS="$(TARGET) main.o TicTacToeDescriptor.o TicTacToeBoard.o TicTacToe.o"
-SRCS=main.cpp TicTacToeDescriptorTest.cpp TicTacToeBoardTest.cpp TicTacToeTest.cpp ../backend/TicTacToeBoardDescriptor.cpp ../backend/TicTacToeBoard.cpp ../backend/TicTacToe.cpp
+OBJS="$(TARGET) main.o TicTacToeDescriptor.o TicTacToeBoard.o TicTacToe.o TicTacToePlayer.o"
+SRCS=main.cpp TicTacToeDescriptorTest.cpp TicTacToeBoardTest.cpp TicTacToeTest.cpp TicTacToePlayerTest.cpp ../backend/TicTacToeBoardDescriptor.cpp ../backend/TicTacToeBoard.cpp ../backend/TicTacToe.cpp ../engine/TicTacToePlayer.cpp
 
 test: $(SRCS)
 	$(CC) $(SRCS) -o $(TARGET)

@@ -88,6 +88,5 @@ TEST_CASE("makemove")
 		CHECK_THROWS(game->makeMove(move));
 		CHECK(game->getBoard().getGameState() == Continue);
 		CHECK(game->getBoard().getDescriptor().getDescription() == ".x.......");
-		CHECK(game->getTurn() == 1);
 	}
 }
