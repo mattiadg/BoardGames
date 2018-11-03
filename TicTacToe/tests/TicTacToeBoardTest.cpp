@@ -1,6 +1,6 @@
 #include "../backend/TicTacToeBoard.h"
 
-#include "catch.hpp"
+#include "../../Catch/catch.hpp"
 
 // TESTS FOR TICTACTOEMOVE
 TEST_CASE("Contstructor throws correct errors")

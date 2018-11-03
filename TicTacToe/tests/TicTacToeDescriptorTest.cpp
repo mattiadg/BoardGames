@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 
-#include "catch.hpp"
+#include "../../Catch/catch.hpp"
 
 
 TEST_CASE("checking for correct error messages in descriptor")

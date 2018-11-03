@@ -8,4 +8,3 @@ test: $(SRCS)
 
 clean:
 	rm -f $(OBJS)
-	rm */*.gch

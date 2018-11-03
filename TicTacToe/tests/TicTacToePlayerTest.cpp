@@ -2,7 +2,7 @@
 #include "../backend/TicTacToeBoardDescriptor.h"
 #include "../backend/TicTacToeBoard.h"
 
-#include "catch.hpp"
+#include "../../Catch/catch.hpp"
 
 TEST_CASE("Test Tictactoe Player class")
 {
